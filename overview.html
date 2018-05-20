@@ -1,0 +1,130 @@
+<div class="header_placeholder " > 
+		<div class="background_image"></div>
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<!--<h1 id="test" style="font-size:300%;padding-top:2em;"><strong>TODAY IS A <span style="color:#ffda5c;">GOOD DAY</span></strong></h1>-->
+				<div class="col-md-8"><br><img src="./imgs/logo/goodday.png" style="width:100%;"></div>
+				<div class="clear"></div>
+				<h4 ><strong>Welcome to excellent digital experience & technology solution.</strong></h4>
+					<a href="#overview" class="button_white">Start</a>
+				<br><br><br><br><br><br><br>
+			</div>
+			<div class="col-md-2"></div>
+		<div class="clear"></div>
+		<script defer>
+			
+		</script>
+	</div>
+	<div class="col-md-12 nospace" style="background-color:#eeeeee;">
+		
+		<div class="col-md-4"  style="padding:4em;background:#ddd;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;"/></div>
+		<div class="col-md-4"  style="padding:4em;"><br><img src="./imgs/logo/dry.png" style="width:100%;"  class="two" /></div>
+		<div class="col-md-4" style="padding:4em;background:#c9c9c9;"><br><img src="./imgs/logo/yagni.png" style="width:100%;"  class="three" /></div>
+		<script defer>
+			
+			$('.one').addClass('animated pulse');
+			setTimeout(function(){ $('.two').addClass('animated pulse'); }, 500);
+			setTimeout(function(){ $('.three').addClass('animated pulse'); }, 1000);
+		</script>	
+	</div>
+	
+	<div class="clear"></div>
+	<div class="col-md-2"></div>
+	<div class="col-md-8 rel-10 ">
+		<div class="col-md-12" >
+			<div class="col-md-12" >
+			<div class="col-md-12" id="overview">
+				<div class="clear "></div><br>
+				<h1 class="text-center "  style="color:#fff;"><strong>Overview</strong></h1>
+				<br>
+				<br>
+				<p class="text-center stylo_h" >
+					Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. 
+					Skilled in RubyMine, PHP, jQuery, Ruby on Rails, and CakePHP. Strong engineering professional with 
+					a Bachelor's Degree focused in Computer Science from Universiti Teknologi MARA.
+					<br>
+					<br>
+					. &nbsp; . &nbsp; . &nbsp; 
+					<br>
+					<br>
+				</p>
+				
+				<span class="slidein_1">
+					<div class="col-md-4" >
+						<span style="">
+					</div>
+					<div class="col-md-8" >
+						<span class="stylo_h" >
+							<h3><strong>What is Made by Few?</strong></h3>
+							<span>Made by Few was conceived five years ago to inspire designers, developers, creatives, and entrepreneurs in the startup space. Today, MxF continues to carry that torch and has expanded by adding additional activities while highlighting the amazing food, people, culture, and talent across the region.</span><br>
+							<a href="#" class="button_white">Learn More</a>
+						</span>
+					</div>
+				</span>	
+				<div class="clear "></div><br><br><br><br>
+				
+				<div class="clear"></div><br>
+				
+			</div>	
+			</div>	
+		</div>	
+	</div>
+	<div class="col-md-2"></div>
+	
+	<div class="clear"></div>
+	<div class="col-md-12 text-center">
+		<h4><strong>Skill set</strong></h4><br>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/codeigniter.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/angularjs.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/bootstrap.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/git.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/jquery.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/laravel.png"/></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/ruby.png"></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/mysql.svg"></span>
+		<span class="size_able"><img class="img_100" src="./imgs/logo/cakephp.png"></span>
+		<div class="clear"></div><br><br>	
+	</div>
+	<div class="clear"></div>
+	<div class="clear"></div>
+	<script defer>
+	
+		
+		
+		// Select all links with hashes
+		$('a[href*="#"]')
+		  // Remove links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+			// On-page links
+			if (
+			  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			  && 
+			  location.hostname == this.hostname
+			) {
+			  // Figure out element to scroll to
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			  // Does a scroll target exist?
+			  if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+				  scrollTop: target.offset().top
+				}, 700, function() {
+				  // Callback after animation
+				  // Must change focus!
+				  var $target = $(target);
+				  $target.focus();
+				  if ($target.is(":focus")) { // Checking if the target was focused
+					return false;
+				  } else {
+					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+					$target.focus(); // Set focus again
+				  };
+				});
+			  }
+			}
+		  });
+	</script>
