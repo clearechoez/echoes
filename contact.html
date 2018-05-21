@@ -13,54 +13,306 @@
 .img_logo{	max-height: 100px; max-width: 100%;}
 .info_overlay{position:absolute;bottom:10px;right:10px;}
 .img_{width:100%;}
-.img_:hover{background:#333;}
+.img_:hover{background:#2c2c2c;}
+.overlay_mode{    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);display:none;}
+.button_white{margin-top: 15px; padding: 5px 38px;color: #ddd;    background: #fa3a46;border: 2px solid #dd383f;border-radius: 27px;font-size: 12px;float: left;transition: all 0.3s ease-in-out;}
+.button_white:hover{color:#fff;text-decoration: none;background:#d31c28;}
+.close_mode{cursor:pointer;}
+.tech_mode{padding: 3px 16px;margin: 0.2em 0.5em 0.2em 0em;background: #ddd;border: 2px solid #838383;border-radius: 18px;font-size:10px;}
 </style>
+	<div class="col-md-12 text-center" style="background:#ddd;">
+		&nbsp;<h4 class="nospace ">PREVIOUS WORKS</h4>&nbsp;
+	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode kenjin_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6">
+						<img class="col-md-12 col-sm-6 col-xs-6" src="./imgs/example/kenjin.JPG" />
+						<img class="col-md-12 col-sm-6 col-xs-6" src="./imgs/example/kenjin2.JPG" /><br>
+						
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>Bereavement Care System</h5>
+						 Xiao-en Bereavement care system, consist of Plot/Tablet/Niche module, cremation module, Sales Kit (for sales team promotion/preview), accounting module (Invoice/Receipt), reporting module, Park Operation module, Staff Roaster module, e-mail enquiry module. 
+						<div class="clear"></div><br>
+						
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Codeigniter Framework</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">RESTful</span>
+						<span class="pull-left tech_mode">API</span>
+						<div class="clear"></div><br>
+						*Its a back-end system, no link available to access public.
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6 nospace rel_ " >
 		<span style="background:url(./imgs/example/kenjin.JPG);" class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_red text-center">&nbsp;
+		<span class="overlay_img overlay_red text-center" onclick="mode_on('kenjin_mode');">&nbsp;
 			<img src="./imgs/logo/xiaoen.png" class="img_logo"/>
-			<span class="info_overlay" style="color:#fff;">
-				<!--<span class="col-sm-6"><img src="./imgs/logo/info.png" class="img_"/></span>
-				<span class="col-sm-6"><img src="./imgs/logo/link.png" class="img_"/></span>-->
-			</span>
 		</span>
 	</div>
-
-	
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode selangkah_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6">
+						<img class="col-md-12 col-sm-6 col-xs-6" src="./imgs/example/selangkah.JPG"/><br>
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>Selangkah Ke UiTM</h5>
+						A UiTM smart "Check Eligibility Requirements" for SPM/STPM student.
+						
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">CSS3</span>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">CAKEphp Framework</span>
+						<div class="clear"></div><br>
+						
+						<a href="//www.selangkah.uitm.edu.my/" class="button_white pull-right" target="_blank"> Link</a><div class="clear"></div><br>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6 nospace rel_"><span style="background:url(./imgs/example/selangkah.JPG);" class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_green text-center">&nbsp;
+		<span class="overlay_img overlay_green text-center " onclick="mode_on('selangkah_mode');">&nbsp;
 			<img src="./imgs/logo/uitm.png" class="img_logo"/>
-			
-		
 		</span>
+	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode jasa_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6">
+						<img src="./imgs/example/jasa.JPG" class="col-md-12 col-sm-6 col-xs-6"/><br>
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>Jabatan Hal Ehwal Khas (JASA)</h5>
+						A Government official Jabatan Hal Ehwal Khas (JASA) websites. a simple wordpress websites easy and manageable for users.
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">CSS3</span>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">Wordpress</span>
+						<div class="clear"></div><br>
+						<a href="//www.jasa.gov.my/bm/" class="button_white pull-right" target="_blank"> Link</a><div class="clear"></div><br>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
 	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/jasa.JPG);"  class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_yellow text-center">&nbsp;
+		<span class="overlay_img overlay_yellow text-center" onclick="mode_on('jasa_mode');">&nbsp;
 			<img src="./imgs/logo/jasa.png" class="img_logo"/>
 			
 		</span>
 	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode biz_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6"><img src="./imgs/example/biz.JPG" class="img_"/><br>
+						
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>BizTunai Microfinance System</h5>
+						BizTunai Microfinance System Back-end system, consist money record system, ledger and others. 
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">Codeigniter Framework</span>
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">RESTful</span>
+						<span class="pull-left tech_mode">API</span>
+						<div class="clear"></div><br>
+						*Its a back-end system, no link available to access public.
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/biz2.JPG);"  class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_green text-center">&nbsp;
+		<span class="overlay_img overlay_green text-center"  onclick="mode_on('biz_mode');">&nbsp;
 			<img src="./imgs/logo/biztunai.png" class="img_logo"/>
 		</span>
 	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode ikw_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6">
+						<img src="./imgs/example/ikw.JPG" class="col-md-12 col-sm-6 col-xs-6"/>
+						<img src="./imgs/example/ikw2.JPG" class="col-md-12 col-sm-6 col-xs-6"/>
+						<br>
+						
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>IKW Online Shopping</h5>
+						An e-commerce website. Full-stack from front-end to back-end. Develop variations interface for the website and developed from the start. Have experience in integration with payment gateway called CIMB Clicks, Madiri Clickpay, and FPX. Sometimes working on data mining/warehousing software/website for IKW
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">Bootstrap 3</span>
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">Laravel Framework</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">AngularJS</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">RESTful</span>
+						<span class="pull-left tech_mode">API</span>
+						<span class="pull-left tech_mode">XML</span>
+						<div class="clear"></div><br>
+						<a href="//ikw.com.my/" class="button_white pull-right" target="_blank"> Link</a><div class="clear"></div><br>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/ikw.JPG);"  class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_black text-center">&nbsp;
+		<span class="overlay_img overlay_black text-center" onclick="mode_on('ikw_mode');">&nbsp;
 			<img src="./imgs/logo/ikw.png" class="img_logo"/>
 		</span>
 	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode iact_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6">
+						<img src="./imgs/example/biz.JPG" class="col-md-12 col-sm-6 col-xs-6"/>
+						<img src="./imgs/example/iact2.JPG" class="col-md-12 col-sm-6 col-xs-6"/>
+						<br>
+						
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>IACT Collage Student Management System</h5>
+						IACT Collage Back-end system, consist academic setup, grading/marking, subject curriculum, promotion system, and others. 
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">Codeigniter Framework</span>
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">RESTful</span>
+						<span class="pull-left tech_mode">API</span>
+						<div class="clear"></div><br>
+						*Its a back-end system, no link available to access public.
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/biz.JPG);"  class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_purple text-center">&nbsp;
+		<span class="overlay_img overlay_purple text-center" onclick="mode_on('iact_mode');">&nbsp;
 			<img src="./imgs/logo/iact.png" class="img_logo"/>
 		</span>
 	</div>
+	<!----------------------------------------------------------------->
+	<div class="overlay_mode tajma_mode">
+		<div  class="col-md-2"></div><div  class="col-md-8">
+			<div class="overlay_content_mode align-middle">
+				<span style="padding-top:10em;">&nbsp;</span>
+				<div class="clear"></div><br>
+				<div class="well well-sm">	
+					<div  class="col-md-12 close_mode text-right" ><h4>X</h4></div>
+					<div class="clear"></div><br>
+					
+					<div  class="col-md-6"><img src="./imgs/example/tajma.JPG" class="col-md-12 col-sm-6 col-xs-6"/><br>
+						<div class="clear"></div><br>
+					</div>
+					
+					<div  class="col-md-6 align-middle" style="font-size:120%;">
+						<h5>Tajma</h5>
+						TP+ is an online software which consists of two standardized psychological tests: TAJMA Personality Plus (TPe+) and TAJMA Career Interest Plus (TCI+). Those tests have been copyrighted and are designed to explore various dimensions of your personality, career interests, inner potential and talent.
+						<div class="clear"></div><br>
+						<span class="pull-left tech_mode">Bootstrap</span>
+						<span class="pull-left tech_mode">Html 5</span>
+						<span class="pull-left tech_mode">MySql</span>
+						<span class="pull-left tech_mode">RESTful</span>
+						<span class="pull-left tech_mode">API</span>
+						<span class="pull-left tech_mode">PHP</span>
+						<span class="pull-left tech_mode">CakePHP Framework</span>
+						<div class="clear"></div><br>
+						<a href="//www.tajma-psychometric.com.my/" class="button_white pull-right" target="_blank"> Link</a><div class="clear"></div><br>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><div  class="col-md-2"></div>
+	</div>
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/tajma.JPG);"  class="placeholder_img_active" ></span>
-		<span class="overlay_img overlay_blue text-center">&nbsp;
+		<span class="overlay_img overlay_blue text-center" onclick="mode_on('tajma_mode');">&nbsp;
 			<img src="./imgs/logo/tajma.png" class="img_logo"/>
-			
 		</span>
 	</div>
+	<!----------------------------------------------------------------->
 	<div class="col-md-3 col-sm-3 col-xs-6  nospace"><span style="background:url(./imgs/example/kbmc.JPG);"  class="placeholder_img_active" ></span>
 		<span class="overlay_img overlay_orange text-center">&nbsp;
 			<img src="./imgs/logo/kbmc.png" class="img_logo"/>
@@ -74,7 +326,14 @@
 		<img src="./imgs/logo/cimb.png"  class="img_100_c" >
 		<img src="./imgs/logo/mandiri.png"  class="img_100_c" >
 	</div>
-	
+<script defer>
+	function mode_on(id){
+		$('.'+id).fadeIn(500);
+	}
+	$( ".close_mode,.overlay_mode" ).click(function() {
+	   $('.overlay_mode').fadeOut(500);
+	});
+</script>	
 	
 	
 	

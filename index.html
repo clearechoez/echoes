@@ -38,8 +38,9 @@ h1,.title{font-weight: 800; font-style: italic;}
 .button_white:hover{color:#fff;text-decoration: none;background:#d31c28;}
 .menu_link{color:#ff9393;transition: all 0.3s ease-in-out;}.menu_link:hover{color:#ffffff;text-decoration:none;}
 .profile{border-radius: 50%;width: 100px;}
-.img_links{height:25px;margin: 2em;margin-left:0;}
+.img_links{height:25px;}
 .title_header{height:50px;}
+.hyper_job{background:#f5f5f5;    padding: 15px;margin-right: 10px;border-radius: 20px;}
 @media only screen and (max-width: 991px) {
 
 }
@@ -55,7 +56,7 @@ h1,.title{font-weight: 800; font-style: italic;}
 			<div class="col-md-4"></div>
 			<div class="col-md-4 text-center back_red">
 				<span class="overhead_f ">
-					<p class="overhead_close" style="font-size:20px;"><strong>x</strong></p>
+					<p class="overhead_close" style="font-size: 25px;cursor: pointer;"><strong>x</strong></p>
 					<div class="clear"></div><br>
 					<br><br>
 					<h1><strong><a class="menu_link" href="#" onclick="change_page('overview.html');">Home </a></strong></h1>
@@ -97,8 +98,9 @@ h1,.title{font-weight: 800; font-style: italic;}
 				(Photoshop), video editing (Such as After Effect & Sony Vegas) and Creating logo
 				clear.echoes@gmail.com | 0174678675<br>
 			</p>
-			<img class="img_links" src="./imgs/logo/linkedin.png">
-			<img class="img_links" src="./imgs/logo/jobstreet.png">
+			<br>
+			<a href="https://www.linkedin.com/in/nurazhar-rohaizat-b80088a8/" target="_blank" class="hyper_job"><img class="img_links" src="./imgs/logo/linkedin.png"></a>
+			<a href="#" class="hyper_job"><img class="img_links" src="./imgs/logo/jobstreet.png"></a>
 			<!--<img class="img_links" src="./imgs/logo/instagram.png">-->
 		</div>
 		<div class="clear"></div><br>
@@ -129,12 +131,12 @@ h1,.title{font-weight: 800; font-style: italic;}
 		});
 		
 		$( ".overhead_close" ).click(function() {
-			$('.overhead_f h1').addClass('slideInUp animated ');
+			$('.overhead_f h1').addClass('slideInUp animated  ');
 			$( ".overhead" ).fadeOut(500);
 		});
 		$( ".overhead_open" ).click(function() {
 			$( ".overhead" ).fadeIn(100); 
-			$('.overhead_f h1').addClass('slideInUp animated ');
+			$('.overhead_f h1').addClass('slideInUp animated  ');
 			
 		});
 		
