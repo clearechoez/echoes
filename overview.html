@@ -12,6 +12,33 @@
 }
 .text-highlight{color:#d51414;}
 .text-alert{color:#d72132;}
+
+
+
+@-webkit-keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+.top {
+  background-color: #fff;
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  background-size: 500px;
+  -webkit-animation: scrollBad 5s linear infinite;
+  animation: scrollBad 5s linear infinite;
+}
 </style>
 <div class="header_placeholder " > 
 		<div class="background_image"></div>
@@ -34,11 +61,11 @@
 			
 		</script>
 	</div>
-	<div class="col-md-12 nospace" style="background-color:#eeeeee;">
+	<div class="col-md-12 nospace top" >
 		<div class="col-md-3"></div>
-		<div class="col-md-2 text-center texts" style="background:#ddd;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;"/></div>
+		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;"/></div>
 		<div class="col-md-2 text-center texts" style=""><br><img src="./imgs/logo/dry.png" style="width:100%;"  class="two" /></div>
-		<div class="col-md-2 text-center texts" style="background:#c9c9c9;"><br><img src="./imgs/logo/yagni.png" style="width:100%;"  class="three" /></div>
+		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/yagni.png" style="width:100%;"  class="three" /></div>
 		<div class="col-md-3"></div>
 		<script defer>
 			$('.one').addClass(' animated pulse infinite');
