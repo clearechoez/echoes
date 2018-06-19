@@ -1,7 +1,7 @@
 <style>
 .placeholder_img_active{position:relative;width:95%;height:250px;border-radius: 10px;border:12px;display:block;margin-bottom:10px;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important; }
 .rel_{position:relative;}
-.overlay_img{position:absolute;width:95%;height:250px;top:0;transition: all 0.3s ease-in-out;border-radius: 10px;padding: 2em;background: #ffffffdb !important;cursor: pointer;border: 1px solid #fff;}
+.overlay_img{position:absolute;width:95%;height:250px;top:0;transition: all 0.3s ease-in-out;border-radius: 10px;padding: 2em;background: #ffffffdb !important;cursor: pointer;border: 0px solid #fff;}
 .overlay_img:hover{opacity:0.5;}
 .overlay_red{background-color: #cddc39de;}
 .overlay_green{background-color: rgba(255, 152, 0, 0.76);}
@@ -20,47 +20,53 @@
 .button_white:hover{color:#fff;text-decoration: none;background:#d31c28;}
 .close_mode{cursor:pointer;}
 .tech_mode{padding: 3px 16px;margin: 0.2em 0.5em 0.2em 0em;background: #ddd;border: 2px solid #838383;border-radius: 18px;font-size:10px;}
-.text-highlight{color:#ff9800;}
+.text-highlight{color:#d51414;}
 .text-alert{color:#d72132;}
 .img_payment{width:100px;margin:0px 10px 0px 10px;}
 .image_border{border:1px solid #ddd;padding:5px;margin:3px;}
+.well_done{background: #c4c4c44f;padding: 2em;}
+#playArea {background: #fff;position: absolute;top: 0;left: 0;z-index: -1;}
 </style>
-	<div class="col-md-12 text-center" style="background:#333;color:#f5f5f5;">
-		<div class="col-md-1"></div>
-		<div class="col-md-10" >
-			<div class="col-md-12 text-center" >
-				<div class="clear"></div><br><br>
-				<img class="title_header" src="./imgs/logo/portfolio.png"/>
-				<div class="clear"></div>
+
+	<div class="col-md-12 text-center rel_" style="background: rgba(192, 192, 192, 0.44);">
+		<canvas id="playArea"></canvas>
+		<div>
+			<div class="col-md-1"></div>
+			<div class="col-md-10" >
+				<div class="col-md-12 text-center" >
+					<div class="clear"></div><br><br>
+					<img class="title_header" src="./imgs/logo/portfolio.png"/>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div><br><br><br>
+				<div class="col-sm-2 text-center">
+					<span><img class="profile" src="./imgs/profile.jpg"/></span><br><br>
+					<span style="font-size:120%;"><strong>Nurazhar <br>Rohaizat</strong></span><br><br>
+				</div>	
+				<div class="col-sm-10 text-left" >	
+						
+						<h5 class="nospace">What did i do in the past and present ? Responsible for : </h5><br>
+						<ul >
+							<li><span class="text-highlight">Create algorithms</span> and manage codes.</li>
+							<li><span class="text-highlight">Maintaining and upgrades</span>. Test on the system for performance-wise and <span class="text-highlight">research</span></li>
+							<li><span class="text-highlight">Design User Interface</span> for Frontend and Backend of the website.</li>
+							<li><span class="text-highlight">Security</span> feature such as Fraud detection system that include Audit Trail, and Encrypted data.</li>
+							<li><span class="text-highlight">Integrate</span> with different domain and API such as Payment Integration, and SMS system.</li>
+							<li><span class="text-highlight">Lead</span> the developers team, <span class="text-highlight">revise</span> code and the scalability.</li>
+							<li>Keep up with the <span class="text-highlight">new technology</span> and <span class="text-highlight">trend</span> related.</li>
+						</ul>
+						My <span class="text-highlight">past works</span> since 2011 till now. Please <span class="text-highlight">click</span> for some <span class="text-highlight">more details</span>. 
+				</div>
+				<div class="clear"></div><br>
+				<div class="col-md-12">
+					. . .
+				</div>
 			</div>
-			<div class="clear"></div><br><br><br>
-			<div class="col-sm-2 text-center">
-				<span><img class="profile" src="./imgs/profile.jpg"/></span><br><br>
-				<span style="font-size:120%;"><strong>Nurazhar <br>Rohaizat</strong></span><br><br>
-			</div>	
-			<div class="col-sm-10 text-left" >	
-					
-					<h5 class="nospace">What did i do in the past and present ? Responsible for : </h5><br>
-					<ul >
-						<li><span class="text-highlight">Create algorithms</span> and manage codes.</li>
-						<li>System <span class="text-highlight">maintaining and upgrades</span>. Operate stress test on the system for performance-wise and <span class="text-highlight">research</span></li>
-						<li><span class="text-highlight">Design User Interface</span> for Frontend and Backend of the website.</li>
-						<li><span class="text-highlight">Security</span> feature such as Fraud detection system that include Audit Trail, and Encrypted data.</li>
-						<li><span class="text-highlight">Integrate</span> with different domain and API such as Payment Integration, and SMS system.</li>
-						<li><span class="text-highlight">Lead</span> the developers team, <span class="text-highlight">revise</span> code and the scalability.</li>
-						<li>Keep up with the <span class="text-highlight">new technology</span> and <span class="text-highlight">trend</span> related.</li>
-					</ul>
-					My <span class="text-highlight">past works</span> since 2011 till now, Some system have public access, and some sites <span class="text-alert">doesn't have public access</span>. Please <span class="text-highlight">click</span> for some <span class="text-highlight">more details</span>. 
-			</div>
-			<div class="clear"></div><br>
-			<div class="col-md-12">
-				. . .
-			</div>
+			<div class="col-md-1"></div>
 		</div>
-		<div class="col-md-1"></div>
 		<div class="clear"></div><br><br>
 	</div>
-<div class="clear"></div>
+<div class="clear"></div><br>
 <div class="col-md-1"></div>
 <div class="col-md-10 col-sm-12">	
 	<!----------------------------------------------------------------->
@@ -595,7 +601,7 @@
 	</div>
 </div>
 <div class="col-md-1"></div>	
-<div class="clear"></div>
+<div class="clear"></div><br>
 	
 	
 	
@@ -617,7 +623,7 @@
 		<div class="col-sm-2 text-center">
 			<span><img class="img_logo" style="max-width:150px;" src="./imgs/logo/ixchel.jpg"/></span><br><br>
 		</div>	
-		<div class="col-sm-10 text-left">
+		<div class="col-sm-10 text-left well_done">
 			<h5 class="nospace">Senior PHP Developer</h5>
 			Ixchel Sdn Bhd<br>
 			Nov 2015 – Present (2 years 8 month)<br>
@@ -654,7 +660,7 @@
 			<span><img class="img_logo" src="./imgs/logo/iserve.png"/></span><br><br>
 		</div>
 		
-		<div class="col-sm-10 text-left">
+		<div class="col-sm-10 text-left well_done">
 			<h5 class="nospace">Fullstack Developer</h5>
 			i-Serve Online Mall Sdn Bhd<br>
 			Jun 2014 – Nov 2015 (1 years 6 month)<br>
@@ -688,7 +694,7 @@
 			<span><img class="img_logo"  src="./imgs/logo/abh.png"/></span><br><br>
 		</div>
 		
-		<div class="col-sm-10 text-left">
+		<div class="col-sm-10 text-left well_done">
 			<h5 class="nospace">Junior Developer</h5>
 			ABH Solution Sdn Bhd<br>
 			Jun 2011 – Dec 2013 (2 years 7 month)<br>
@@ -764,6 +770,188 @@
 	$( ".close_mode" ).click(function() {
 	   $('.overlay_mode').fadeOut(500);
 	});
+	
+	
+	// shim layer with setTimeout fallback
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 23);
+          };
+})();
+
+
+$(function(){
+  $(window).resize(function(){
+    $("#playArea").attr({
+      'width': $('body').width(),
+      'height': $('body').height()
+    });
+    
+    width = $('body').width();
+    height = $('body').height();
+    
+  });
+  $(window).resize();
+});
+
+var Point = function(){
+  this._size = 0.5;
+  this._x = 0;
+  this._y = 0;
+  this._direction = 0;
+  this._velocity = 0;
+  this._distances = [];
+  this._neighboors = [];
+  this._randomization = 0;
+
+  this.__collection = null;
+  
+  
+  this._step = function(aCollection){
+
+    var modifiedVelocity = this._velocity*1 * ((Math.random() * this._randomization+1)/10);
+    var direction = (Math.random()*2%2 >1)?-1:1;
+
+    this._direction =  this._direction*1 + ((Math.random() * this._randomization) * direction);
+    var radianAngle = this._direction * Math.PI / 180;
+
+    
+    this._x = (this._x * 1) + (modifiedVelocity * Math.cos(radianAngle) * 1);
+    this._y = (this._y * 1) + (modifiedVelocity * Math.sin(radianAngle) * 1);
+
+    if(this._x > width) this._x = 0;
+    if(this._x < 0) this._x = width;
+    if(this._y > height) this._y = 0;
+    if(this._y < 0) this._y = height;
+ 
+    this.__collection = aCollection;
+    
+
+  }
+  
+  this._computeNeighboors = function() {
+    if(this.__collection == null)  return;
+
+    aCollection = this.__collection;
+    //compute the closest neighboor
+    this._distances = [];
+    for(i=0; i < aCollection.length; i++){
+      
+      if(aCollection[i]._x != this._x &&
+         aCollection[i]._y != this._y){
+
+
+        this._distances.push({
+          pointIndex: i,
+          pointObj: aCollection[i],
+          distance: Math.sqrt( 
+            Math.pow((this._x - aCollection[i]._x), 2) + 
+            Math.pow((this._y - aCollection[i]._y), 2)
+          )
+        });
+      }
+    }
+    this._distances.sort(function(a,b){ 
+      defaultReturn = 0;
+      if(a.distance < b.distance) defaultReturn = -1;
+      if(a.distance > b.distance) defaultReturn = 1;
+      return defaultReturn
+
+    });
+    
+    this._neighboors = this._distances.slice(0,3);
+  }
+
+  
+  this.draw = function(context){
+    this._computeNeighboors();
+    
+    //draw connection lines
+    
+    context.lineWidth = 0.25;
+    context.strokeStyle = '#666';
+    
+    context.beginPath();    
+    for(i=0; i<this._neighboors.length; i++) {
+
+        context.moveTo(this._x, this._y);
+        context.lineTo(this._neighboors[i].pointObj._x,   this._neighboors[i].pointObj._y);
+      
+        context.lineWidth = 0.10 + 5 / this._neighboors[i].distance;
+    }
+    context.closePath();
+
+    context.stroke();
+    
+    context.beginPath();
+    context.arc(this._x, this._y, this._size*this._velocity, 0, 2 * Math.PI, false);
+    context.fillStyle = '#999';
+    context.strokeStyle = '#666';
+    context.lineWidth = 0.5;
+    context.fill();
+    context.stroke();
+    
+    context.beginPath();
+    context.arc(this._x, this._y, this._size, 0, 2 * Math.PI, false);
+    context.fillStyle = '#666';
+    context.fill();
+    
+//    ctx.fillText(this._direction.toFixed(2), this._x, this._y);
+    
+  }
+}
+
+
+var aPoints = [];
+var can, ctx, interval, width, height;
+var numPoints = 50;
+/* var distanceTreshold = 100; */
+
+function init() {
+  can = document.getElementById("playArea");
+  ctx = can.getContext("2d");
+  width = $('body').width();
+  height = $('body').height();
+  
+  for(x=0; x<numPoints; x++){
+    var newPoint = new Point();
+    newPoint._size = (Math.random() * (3 - 0.5) + 0.5).toFixed(2);
+    newPoint._x = (Math.random() * width).toFixed(0);
+    newPoint._y = (Math.random() * height).toFixed(0);
+    newPoint._direction = (Math.random() * 360).toFixed(2);
+    newPoint._velocity = (Math.random() * (4 - 0.1) + 0.2).toFixed(2);
+    newPoint._randomization = (Math.random() * (10 - 0) + 0).toFixed(2);
+    aPoints.push(newPoint);
+  }
+
+  animate();
+}
+
+function animate(){
+  for(x=0; x<numPoints; x++){
+    aPoints[x]._step(aPoints);
+  }
+  requestAnimFrame( animate );
+  draw();
+}
+
+function draw(){
+  ctx.save();
+
+  ctx.clearRect(0,0,width,height);
+  
+  for(x=0; x<numPoints; x++){
+    aPoints[x].draw(ctx);
+  }
+  
+  ctx.restore();
+}
+
+init();
+	
 </script>	
 	
 	
