@@ -1,9 +1,9 @@
 <style>
-.img_{width:90%;}
+.img_{width:90%;max-width: 350px;}
 .texts{padding:1em;}
 @media only screen and (max-width: 991px) {
     .h3, h3{font-size: 200%;}
-	.img_{width:85%;}
+	.img_{width:85%;max-width: 350px;}
 	.header_placeholder{background:url('./imgs/background_black.jpg');background-repeat: no-repeat;
     background-size: 100% 100%;}
 	.one,.two,.three{width:initial !important;height:90px;}
@@ -63,9 +63,9 @@
 	</div>
 	<div class="col-md-12 nospace top" >
 		<div class="col-md-3"></div>
-		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;"/></div>
-		<div class="col-md-2 text-center texts" style=""><br><img src="./imgs/logo/dry.png" style="width:100%;"  class="two" /></div>
-		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/yagni.png" style="width:100%;"  class="three" /></div>
+		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;    max-width: 220px;"/></div>
+		<div class="col-md-2 text-center texts" style=""><br><img src="./imgs/logo/dry.png" style="width:100%;    max-width: 220px;"  class="two" /></div>
+		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/yagni.png" style="width:100%;    max-width: 220px;"  class="three" /></div>
 		<div class="col-md-3"></div>
 		<script defer>
 			$('.one').addClass(' animated pulse infinite');
@@ -84,20 +84,20 @@
 				<span style="font-size:120%;"><strong>Nurazhar <br>Rohaizat</strong></span><br><br>
 			</div>	
 			<div class="col-sm-9 text-left">
-				<h5 class="nospace">What <span class="text-highlight">Position</span> do i seek  ? </h5>
+				<h5 class="nospace">What <span class="text-highlight">Position</span> do i seek  ? </h5><br>
 					<ul>
-						<li>Fullstack Developer, job for backend and front-end</li>
-						<li>PHP Developer or Web Developer, mainly using PHP, HTML5, and etc </li>
+						<li>Front-end UI/UX web developer</li>
+						<li>PHP Developer or Web Developer, mainly using HTML, CSS, Javascript, AngularJS, PHP (Codeigniter, Cakephp, Laravel, Ruby on Rails), and etc </li>
 					</ul>
 					<br>
-				<h5 class="nospace"><strong>What <span class="text-highlight">reasons</span> seeking new company ?</strong></h5>
+				<h5 class="nospace"><strong>What <span class="text-highlight">reasons</span> seeking new company ?</strong></h5><br>
 					<ul>
 						<li>Seeking  <span class="text-highlight">new experience</span>, project and environment. World is big and vast, i need to learn more and experience it more.</li>
 						<li>Expand my knowledge, views and  <span class="text-highlight">meet more people</span>.</li>
 						<li> <span class="text-highlight">Distance from home</span> is one of the reasons too. If i can free some more time and  <span class="text-highlight">improve my quality time at home</span>, i would be glad too.</li>
 					</ul>
 					<br>
-				<h5 class="nospace"><strong>What so <span class="text-highlight">special</span> ?</strong></h5>
+				<h5 class="nospace"><strong>What so <span class="text-highlight">special</span> ?</strong></h5><br>
 					<ul>
 						<li>Been in the IT industries since 2011 ( Experience More than 5 years )</li>
 						<li> <span class="text-highlight">More than 10 project</span> involvement including the freelance projects.</li>
@@ -108,10 +108,12 @@
 						</li>
 					</ul>
 					<br>
-					<a href="#" class="button_white" onclick="change_page('contact.html');" >Learn More</a>
+					<a href="#" class="button_white " onclick="change_page('contact.html');" ><span class="this_is">Learn More</span></a>
 					<div class="clear"></div><br><br>
 			</div>
-			
+			<script defer>
+				$('.this_is').addClass('animated pulse infinite');
+			</script>	
 		</div>
 		<div class="clear"></div><br>
 	</div>
