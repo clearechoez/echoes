@@ -100,8 +100,8 @@
 					<br>
 				<h5 class="nospace"><strong>What so <span class="text-highlight">special</span> ?</strong></h5><br>
 					<ul>
-						<li>Been in the IT industries since 2011 ( Experience More than 5 years )</li>
-						<li> <span class="text-highlight">More than 10 project</span> involvement including the freelance projects.</li>
+						<li>Been in the IT industries since 2011 ( Experience More than <span class="exp">10</span> years )</li>
+						<li> <span class="text-highlight">More than 15 project</span> involvement including the freelance projects.</li>
 						<li>Have wide  <span class="text-highlight">variety skill </span>other than programming skill.</li>
 						<li>My programming principle <span class="text-highlight">KISS, DRY and YAGNI.</span><br>
 							"You aren't gonna need it" (acronym: YAGNI) is a principle of extreme programming that states a programmer should not add functionality until deemed necessary.
@@ -185,4 +185,10 @@
 			  }
 			}
 		  });
+		  
+		exp= 1988-04-07;
+		exp = new Date(exp);
+		var today = new Date();
+		var age = Math.floor((today-exp) / (365.25 * 24 * 60 * 60 * 1000));
+		$('.exp').html(exp);
 	</script>
