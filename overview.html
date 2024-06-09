@@ -1,3 +1,4 @@
+<script src="//unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
 <style>
 .img_{width:90%;max-width: 350px;}
 .texts{padding:1em;}
@@ -43,7 +44,9 @@
 </style>
 <div class="header_placeholder " > 
 		<div class="background_image"></div>
-			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<lottie-player src="./json/model-loader.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
+			</div>
 			<div class="col-md-8 ">
 				<!--<h1 id="test" style="font-size:300%;padding-top:2em;"><strong>TODAY IS A <span style="color:#ffda5c;">GOOD DAY</span></strong></h1>-->
 				<div class="col-md-2"></div><div class="col-md-8 "><br>
@@ -56,13 +59,12 @@
 				<div class="clear"></div>
 					
 			</div>
-			<div class="col-md-2"></div>
 		<div class="clear"></div>
 		<script defer>
 			
 		</script>
 	</div>
-	<div class="col-md-12 nospace top" >
+	<!--div class="col-md-12 nospace top" hidden>
 		<div class="col-md-3"></div>
 		<div class="col-md-2 text-center texts" style="background:#c9c9c970;"><br><img src="./imgs/logo/kiss.png" class="one" style="width:100%;    max-width: 220px;"/></div>
 		<div class="col-md-2 text-center texts" style=""><br><img src="./imgs/logo/dry.png" style="width:100%;    max-width: 220px;"  class="two" /></div>
@@ -73,7 +75,7 @@
 			setTimeout(function(){ $('.two').addClass(' animated pulse infinite'); }, 600);
 			setTimeout(function(){ $('.three').addClass('animated pulse infinite'); }, 1300);
 		</script>	
-	</div>
+	</div-->
 	
 	<div class="clear"></div>
 	<div class="col-md-2"></div>
@@ -87,7 +89,7 @@
 			<div class="col-sm-9 text-left">
 				<h5 class="nospace">What <span class="text-highlight">Position</span> do i seek  ? </h5><br>
 					<ul>
-						<li>Front-end UI/UX web developer</li>
+						<li>Lead Developer, Fullstack Developer</li>
 						<li>PHP Developer or Web Developer, mainly using HTML, CSS, Javascript, AngularJS, PHP (Codeigniter, Cakephp, Laravel, Ruby on Rails), and etc </li>
 					</ul>
 					<br>
@@ -186,9 +188,9 @@
 			}
 		  });
 		  
-		exp= 1988-04-07;
+		/*exp= 1988-04-07;
 		exp = new Date(exp);
 		var today = new Date();
 		var age = Math.floor((today-exp) / (365.25 * 24 * 60 * 60 * 1000));
-		$('.exp').html(exp);
+		$('.exp').html(exp);*/
 	</script>
