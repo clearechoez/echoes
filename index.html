@@ -23,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/animate.css" />
 	<script type="text/javascript" src="./jquery/jquery.min.js" ></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i" rel="stylesheet">
-
+	<script src="//kit.fontawesome.com/1f2096dc59.js" crossorigin="anonymous" defer></script><!--fontawesome limited 10k kit-key -->
 <style>
 html:after {right: 0;}
 body:after {bottom: 0;}
@@ -71,18 +71,22 @@ h1,.title{font-weight: 800; }
 .button_white{margin-top: 15px; padding: 5px 38px;color: #ddd;    background: #fa3a46;border: 2px solid #dd383f;border-radius: 27px;font-size: 12px;transition: all 0.3s ease-in-out;}
 .button_white:hover{color:#fff;text-decoration: none;background:#d31c28;}
 .menu_link{color:#ff9393;transition: all 0.3s ease-in-out;}.menu_link:hover{color:#ffffff;text-decoration:none;}
+.menu_link small{font-size: initial;}
 .profile{border-radius: 50%;width: 100px;}
-
+.nav_hypericon a{color:#fff;font-size: 20px;}
 .made-in-malaysia{position: fixed;font-size: 12px;transform-origin: bottom left;transform: rotate(-90deg);bottom: 84px;left: 55px;text-align: left; color: #919795;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
 
 .img_links{height:20px;}
 .title_header{height:50px;}
-.hyper_job{display: inline-block;background: #ffffff;padding: 10px 21px;margin: 3px 3px 3px 0px;border-radius: 20px;box-shadow: 2px 2px 1px #ddd;}
+.hyper_job{font-size: 27px;color: #878787;}
 .overlay_loading{z-index: 2;position:fixed;top:0;background:#fff;width:100%;height:100%;}
 .max_load{max-height:300px;}
 ol, ul{font-smooth: auto;font-family: sans-serif;}
 .norm_f{font-family: sans-serif;}
+.show_inmobile{display:none;}
 @media only screen and (max-width: 991px) {
+	.hide_inmobile{display:none !important;}
+	.show_inmobile{display:block;}
 	.made-in-malaysia{position:initial;transform:initial; display: block;text-align: center;font-size: 12px;letter-spacing: .02em;margin-bottom: 20px;}
 	.overhead_close{position: absolute;right: 11%;} 
 }
@@ -122,8 +126,15 @@ ol, ul{font-smooth: auto;font-family: sans-serif;}
 						<br><br>
 						<h1><strong><a class="menu_link" href="#" onclick="change_page('overview.html');">Home </a></strong></h1>
 						<h1><strong><a class="menu_link" href="#" onclick="change_page('experience.html');">Experience</a></strong></h1>
+						<h1><strong><a class="menu_link" href="#" >Project <small>Coming soon</small></a></strong> </h1>
+						
 						<!--<h1><strong><a class="menu_link" href="#" onclick="change_page('extra.html');">Extra</a></strong></h1>-->
 					</span>
+					<div class="text-end nav_hypericon p-4">
+						<a href="https://www.linkedin.com/in/nurazhar-rohaizat-b80088a8/" target="_blank" class=" me-3"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/azharhikari/" target="_blank" class=" me-3"><i class="fa-brands fa-square-instagram"></i></a>
+						<a href="mailto:nurazhar.rohaizat@gmail.com" target="_blank" class=" me-3"><i class="fa-solid fa-envelope"></i></a>
+					</div>
 				</div>
 			</div>
 		</span>
