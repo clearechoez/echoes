@@ -3,124 +3,139 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="Nurazhar Rohaizat" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome</title>
-<meta name="description" content="My full fancy introduction and presentation." />
-<meta name="keywords"  content="clear,echoes,nurazhar,rohaizat" />
+
+<title>Nurazhar Rohaizat Portfolio</title>
+<meta property="og:title" content="Nurazhar Rohaizat Portfolio" />
+<meta property="og:description" content="My full fancy introduction and presentation." />
+<meta property="og:image" content="{{asset('img/mantul_inectar/logo_inectar_color.png')}}" />
+
 <meta name="Resource-type" content="Document" />
 <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 <link rel="icon" href="./favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	
+	<link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" onload="this.rel='stylesheet'" />
+	
+	
+	<!--link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	<script type="text/javascript" src="./jquery/bootstrap.min.js" ></script--> 
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="./css/animate.css" />
 	<script type="text/javascript" src="./jquery/jquery.min.js" ></script>
-	<script type="text/javascript" src="./jquery/bootstrap.min.js" ></script> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i" rel="stylesheet">
 
 <style>
-body{font-family: 'Open Sans', sans-serif;font-size:12px;-webkit-font-smoothing: auto;}
-h1,.title{font-weight: 800; font-style: italic;}
+html:after {right: 0;}
+body:after {bottom: 0;}
+html:after, html:before {
+    content: "";
+    will-change: top left;
+    backface-visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    z-index: 21000;
+}
+body:after, body:before {
+    content: "";
+    will-change: top left;
+    backface-visibility: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    z-index: 20000;
+}
+body{
+/*font-family: 'Open Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/font-feature-settings: "ss03", "cv02", "cv11";font-size:15px;-webkit-font-smoothing: auto;background-color:#f4f9fc;color:#0f1b61;}
+
+h1,.title{font-weight: 800; }
 *:focus {outline:0;}
 .clear{clear:both;}
 .nospace{padding:0;margin:0;}
 .rel-10{position:relative;top:-15px;background:rgba(238, 238, 238, 0.81);padding:10px;}
-.menu_float{background:rgba(58,58,58,.1);padding: 6px 13px;border-radius: 2px;position:fixed;top:0;right:0;color:#ddd;margin:5px;z-index: 1;}
-.header_placeholder{background:url('./imgs/zen.jpg'); background-size: 100%;color:#f5f5f5; }
+.menu_float{background:rgba(58,58,58,.1);padding: 6px 13px;border-radius: 2px;position:fixed;top:17px;right:17px;color:#ddd;margin:5px;z-index: 1;}
+/*.header_placeholder{background:url('./imgs/zen.jpg'); background-size: 100%;color:#f5f5f5; }*/
   
 .stylo_h{font-size:110%;line-height:30px;}
-.red_bar{position:fixed;top:0;background:#e64449;padding:3px 5px;transition: all 0.01s ease-in-out;z-index:1;}
 .overhead{position: fixed;z-index:2;width:100%;height:100%;background:rgba(58,58,58,0.3);}
 .overhead_f{z-index:3;width:100%;height:100%;color:#fff;}
-.back_red{position:relative;height:100%;background-image:url('./imgs/background_red.jpg');background-color:#e64449;background-position: bottom; background-repeat: no-repeat;} 
-.overhead_close{position: absolute;right: 4%;top: 0px;} 
-.img_100{height:60px;margin: 1em;
--webkit-filter: grayscale(80%);-moz-filter: grayscale(80%); -ms-filter: grayscale(100%);-o-filter: grayscale(100%); filter: grayscale(100%);opacity:0.5;} 
+.back_red{position:relative;height:100%;background-color:#e64449f2;background-position: bottom; background-repeat: no-repeat;} 
+.overhead_close{position: absolute;right: 7%;top: 18px;} 
+.img_100{height:52px;margin: 5px 5px;
+/*-webkit-filter: grayscale(80%);-moz-filter: grayscale(80%); -ms-filter: grayscale(100%);-o-filter: grayscale(100%); filter: grayscale(100%);*/opacity:0.9;} 
 .img_100_c{height:50px;margin: 1em;} 
 .button_white{margin-top: 15px; padding: 5px 38px;color: #ddd;    background: #fa3a46;border: 2px solid #dd383f;border-radius: 27px;font-size: 12px;transition: all 0.3s ease-in-out;}
 .button_white:hover{color:#fff;text-decoration: none;background:#d31c28;}
 .menu_link{color:#ff9393;transition: all 0.3s ease-in-out;}.menu_link:hover{color:#ffffff;text-decoration:none;}
 .profile{border-radius: 50%;width: 100px;}
-.img_links{height:25px;}
+
+.made-in-malaysia{position: fixed;font-size: 12px;transform-origin: bottom left;transform: rotate(-90deg);bottom: 84px;left: 55px;text-align: left; color: #919795;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+
+.img_links{height:20px;}
 .title_header{height:50px;}
-.hyper_job{background:#f5f5f5;padding: 4px 13px;margin: 3px 3px 3px 0px;border-radius: 20px;float: left;}
+.hyper_job{display: inline-block;background: #ffffff;padding: 10px 21px;margin: 3px 3px 3px 0px;border-radius: 20px;box-shadow: 2px 2px 1px #ddd;}
 .overlay_loading{z-index: 2;position:fixed;top:0;background:#fff;width:100%;height:100%;}
 .max_load{max-height:300px;}
 ol, ul{font-smooth: auto;font-family: sans-serif;}
 .norm_f{font-family: sans-serif;}
 @media only screen and (max-width: 991px) {
-
+	.made-in-malaysia{position:initial;transform:initial; display: block;text-align: center;font-size: 12px;letter-spacing: .02em;margin-bottom: 20px;}
+	.overhead_close{position: absolute;right: 11%;} 
+}
+</style>
+<style>
+.abs_mouse_bar{position:fixed;bottom: 93px;right: 27px;z-index: 999;border-left: 2px solid #c4c4c4bd;width: 20px;height: 63px;} 
+.abs_mouse{position:fixed;bottom:50px;right:41px;z-index:999;} 
+.mouse{width:40px;height:60px;border-radius:20px;border:3px solid #999;position:absolute;top:calc(50% - 35px);left:calc(50% - 25px)}
+.mouse:before,.mouse:after{content:"";display:block;position:absolute}
+.mouse-5:before{width:10px;height:10px;border-radius:50%;top:10px;left:calc(50% - 5px);border:2px solid rgba(153,153,153,0.55)}
+.mouse-5:after{top:30px;left:calc(50% - 5px);border:5px solid transparent;border-top-color:#999;-webkit-animation:mouse-5-arrow 1.2s ease-in-out infinite;animation:mouse-5-arrow 1.2s ease-in-out infinite}
+@-webkit-keyframes mouse-5-arrow {
+	20%,100%{transform:translateY(0)}
+	50%{transform:translateY(9px)}
+	80%{transform:translateY(-3px)}
+}
+@keyframes mouse-5-arrow {
+	20%,100%{transform:translateY(0)}
+	50%{transform:translateY(9px)}
+	80%{transform:translateY(-3px)}
 }
 </style>
 </head>
-<body>	
-	<span class="red_bar"></span>
+<body>
+	<div class="abs_mouse_bar" ></div>
+	<div class="abs_mouse" ><div class="mouse mouse-5"></div></div>
 	<div class="menu_float overhead_open">
 		<img src="./imgs/menu-alt.png">
-		<!--<strong>Overview | History | Previous Works | Extra | Contact </strong>-->
 	</div>
 		<span class="overhead" style="display:none;">
-			<div class="col-md-4"></div>
-			<div class="col-md-4 text-center back_red">
-				<span class="overhead_f ">
-					<p class="overhead_close" style="font-size: 25px;cursor: pointer;"><strong>x</strong></p>
-					<div class="clear"></div><br>
-					<br><br>
-					<h1><strong><a class="menu_link" href="#" onclick="change_page('overview.html');">Home </a></strong></h1>
-					<h1><strong><a class="menu_link" href="#" onclick="change_page('contact.html');">Portfolio</a></strong></h1>
-					<!--<h1><strong><a class="menu_link" href="#" onclick="change_page('extra.html');">Extra</a></strong></h1>-->
-				</span>
+			<div class="row m-0">
+				<div class="col-8"></div>
+				<div class="col-md-4 px-5 back_red min-vh-100">
+					<span class="overhead_f ">
+						<p class="overhead_close" style="font-size: 25px;cursor: pointer;"><strong>x</strong></p>
+						<div class="clear"></div><br>
+						<br><br>
+						<h1><strong><a class="menu_link" href="#" onclick="change_page('overview.html');">Home </a></strong></h1>
+						<h1><strong><a class="menu_link" href="#" onclick="change_page('experience.html');">Experience</a></strong></h1>
+						<!--<h1><strong><a class="menu_link" href="#" onclick="change_page('extra.html');">Extra</a></strong></h1>-->
+					</span>
+				</div>
 			</div>
-			<div class="col-md-4"></div>
 		</span>
 	<div class="" style="padding:10px">
 		<span class="text-center">
-			<h3 class="nospace" style="font-weight: 800;font-style: initial;"><strong style="cursor:pointer	;" onclick="change_page('overview.html');">CLEAR <span class="text-danger">ECHOES</span></strong> <small> <small>Good day</small></small></h3>
+			<h3 class="nospace" style="font-weight: 800;font-style: initial;"><strong style="cursor:pointer	;" onclick="change_page('overview.html');">&nbsp; </strong></h3>
 		</span>
 	</div>	
-<div id="result">	
-	
-</div>
-<br>
-<div class="clear"></div><br>
-<div style="background:#2c2c2c;color:#f5f5f5;">
-	<div class="col-md-2"></div>
-	<div class="col-md-8" >
-		<div class="col-md-12 text-center" >
-			<div class="clear"></div><br><br>
-			<img class="title_header" src="./imgs/logo/contact.png"/>
-			<div class="clear"></div><br>. . .
-		</div>
-		<div class="clear"></div><br><br><br>
-		<div class="col-sm-3 text-center">
-			<span><img class="profile" src="./imgs/profile.jpg"/></span><br><br>
-			<span style="font-size:120%;"><strong>Nurazhar <br>Rohaizat</strong></span><br><br>
-		</div>	
-		<div class="col-sm-9">	
-			<p style="font-size:11px;">
-				Software Engineer<br>
-				IXCEL Corporation (M) SDN BHD (2015-Present) , software house company located in SS14, Subang Jaya, Selangor<br><br>
-				Home : Sg Chua, Kajang, Selangor<br>
-				clear.echoes@gmail.com | 0174678675<br>
-			</p>
-			<br>
-			
-			<a href="https://www.linkedin.com/in/nurazhar-rohaizat-b80088a8/" target="_blank" class="hyper_job"><img class="img_links" src="./imgs/logo/linkedin.png"></a>
-			<a href="#" class="hyper_job"><img class="img_links" src="./imgs/logo/jobstreet.png"></a>
-			<!--<img class="img_links" src="./imgs/logo/instagram.png">-->
-			
-		</div>
-		<div class="clear"></div><br>
-		<div class="col-md-12">
-			
-		</div>&nbsp;
+	<div id="result">	
 		
 	</div>
-	<div class="col-md-2"></div>
-	<div class="clear"></div><br><br>
-	<table class="overlay_loading">
-		<tr>
-			<td class="text-center align-middle"> <img src="./imgs/map-pin-.gif" class="max_load"/> </td>
-		</tr>
-	</table>
-</div>	
+	<small class="made-in-malaysia">© ClearEchoes. Nurazhar Bin Rohaizat.</small>
 	<script defer>
 		change_page('overview.html');
 		function change_page(id){
@@ -133,13 +148,6 @@ ol, ul{font-smooth: auto;font-family: sans-serif;}
 		}
 	</script>
 	<script defer>
-	
-		$(window).scroll(function() {
-			scrollTop = $(window).scrollTop();
-			console.log(scrollTop);
-		   $('.red_bar').width(scrollTop*2);
-		});
-		
 		$( ".overhead_close" ).click(function() {
 			$('.overhead_f h1').addClass('slideInUp animated  ');
 			$( ".overhead" ).fadeOut(500);
@@ -149,7 +157,9 @@ ol, ul{font-smooth: auto;font-family: sans-serif;}
 			$('.overhead_f h1').addClass('slideInUp animated  ');
 			
 		});
-		
+	</script>
+	<script defer>
+		$(".abs_mouse").click(function () {$("html, body").animate({scrollTop: 0}, 200);});
 	</script>
 	</div>
 </body>
