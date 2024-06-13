@@ -41,20 +41,27 @@
   animation: scrollBad 5s linear infinite;
 }
 .img_payment{max-width:100px;max-height:39px;margin:0px 10px 0px 10px;}
+.stripes {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%23aadcec' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%23aadcec' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E");
+    background-size: 11px;
+    opacity: .6;
+}
+.titles_stripe{position: absolute;z-index: -1;left: 40%;top: -10px;}
 </style>
 <div class="container-xl pb-5">
 	<div class="row m-0">
 		<div class="col-md-4 d-flex align-items-start"> 
-			<lottie-player src="./json/reloadly-animation.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
+			<lottie-player src="./json/delivery-on-the-way.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
 		</div>
 		<div class="col-md-8 p-sm-4 p-2">
 			<div class="d-flex mb-5">
 			  <div class="flex-shrink-0">
 				<span class="hide_inmobile"><img class="profile" src="./imgs/profile.jpg"/></span>
 			  </div>
-			  <div class="flex-grow-1 ms-3">
-				<h1 style="h1 display-4 m-0"><strong>Nurazhar Bin Rohaizat</strong></h1>
-				<p class="lead">I'm an <span class="fw-bold">experience Web Developer</span> from Kuala Lumpur, Malaysia.</p>
+			  <div class="flex-grow-1 ms-3 relative">
+				<div class="stripes p-5 w-50 titles_stripe"></div>
+				<h1 style="h1 display-4 m-0  lh-1"><strong>NURAZHAR <br>BIN ROHAIZAT</strong></h1>
+				<p class="lead lh-1">I'm an <span class="fw-bold">experience Web Developer</span> from <br>Kuala Lumpur, Malaysia.</p>
 				<p class="">
 					<a href="https://www.linkedin.com/in/nurazhar-rohaizat-b80088a8/" target="_blank" class="hyper_job me-3"><i class="fa-brands fa-linkedin"></i></a>
 					<a href="https://www.instagram.com/azharhikari/" target="_blank" class="hyper_job me-3"><i class="fa-brands fa-square-instagram"></i></a>
@@ -68,36 +75,54 @@
 					
 				</div>	
 				<div class="col-12">
-					<h5 class="p-0 fw-bold">What <span class="text-highlight">Position</span> do i seek  ? </h5>
-						<ul>
-							<li>Lead Developer, Fullstack Developer</li>
-							<li>PHP Developer or Web Developer, mainly using HTML, CSS, Javascript, AngularJS, PHP (Codeigniter, Cakephp, Laravel, Ruby on Rails), and etc </li>
-						</ul>
-						<br>
-					<h5 class="p-0 fw-bold">What <span class="text-highlight">reasons</span> seeking new company ?</h5>
-						<ul>
-							<li>Seeking  <span class="text-highlight">new experience</span>, project and environment. World is big and vast, i need to learn more and experience it more.</li>
-							<li>Expand my knowledge, views and  <span class="text-highlight">meet more people</span>.</li>
-							<li> <span class="text-highlight">Distance from home</span> is one of the reasons too. If i can free some more time and  <span class="text-highlight">improve my quality time at home</span>, i would be glad too.</li>
-						</ul>
-						<br>
-					<h5 class="p-0 fw-bold"><strong>What so <span class="text-highlight">special</span> ?</strong> </h5>
-						<ul>
-							<li>Been in the IT industries since 2011 ( Experience More than <span class="exp">10</span> years )</li>
-							<li> <span class="text-highlight">More than 15 project</span> involvement including the freelance projects.</li>
-							<li>Have wide  <span class="text-highlight">variety skill </span>other than programming skill.</li>
-							<li>My programming principle <span class="text-highlight">KISS, DRY and YAGNI.</span><br>
-								"You aren't gonna need it" (acronym: YAGNI) is a principle of extreme programming that states a programmer should not add functionality until deemed necessary.
+					<div class="row m-0">
+						
+						<div class="col-sm-8">
+							<h5 class="p-0 fw-bold"><strong>What <span class="text-highlight">Position</span> do i seek  ? </strong></h5>
+							<ul>
+								<li>Lead Developer, Fullstack Developer</li>
+								<li>PHP Developer or Web Developer, mainly using HTML, CSS, Javascript, AngularJS, PHP (Codeigniter, Cakephp, Laravel, Ruby on Rails), and etc </li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<lottie-player src="./json/find_onboat.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
+						</div>
+						<div class="col-sm-12 py-4 stripes mb-4"></div>
+						<div class="col-sm-8">
+							<h5 class="p-0 fw-bold"><strong>What <span class="text-highlight">reasons</span> seeking new company ?</strong></h5>
+							<ul>
+								<li>Seeking  <span class="text-highlight">new experience</span>, project and environment. World is big and vast, i need to learn more and experience it more.</li>
+								<li>Expand my knowledge, views and  <span class="text-highlight">meet more people</span>.</li>
+								<li> <span class="text-highlight">Distance from home</span> is one of the reasons too. If i can free some more time and  <span class="text-highlight">improve my quality time at home</span>, i would be glad too.</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
 							
-							</li>
-						</ul>
+							<lottie-player src="./json/model-loader.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
+						</div>
+						<div class="col-sm-12 py-4 stripes mb-4"></div>
+						<div class="col-sm-8">
+							<h5 class="p-0 fw-bold"><strong>What so <span class="text-highlight">special</span> ?</strong> </h5>
+							<ul>
+								<li>Been in the IT industries since 2011 ( Experience More than <span class="exp">10</span> years )</li>
+								<li> <span class="text-highlight">More than 15 project</span> involvement including the freelance projects.</li>
+								<li>Have wide  <span class="text-highlight">variety skill </span>other than programming skill.</li>
+								<li>My programming principle <span class="text-highlight">KISS, DRY and YAGNI.</span><br>
+									"You aren't gonna need it" (acronym: YAGNI) is a principle of extreme programming that states a programmer should not add functionality until deemed necessary.
+								
+								</li>
+							</ul>
+						</div>	
+						<div class="col-sm-3">
+							<lottie-player src="./json/ok-green.json"  background="transparent" speed="1"  autoplay loop ></lottie-player>	
+						</div>
+					</div>	
 						<br>
 					<a href="#" class="button_white " onclick="change_page('experience.html');" ><span class="this_is">Learn More</span></a>
 					<br>
 					<br>
 					<h5 class="p-0 fw-bold mb-3">Integration <span class="text-alert">Experience</span> & Skill <span class="text-alert">set </span></h5>
 					<img src="./imgs/logo/fpx.png"  class="img_payment">
-					<img src="./imgs/logo/cimb.png"  class="img_payment" style="width:150px;">
 					<img src="./imgs/logo/mandiri.png"  class="img_payment" >
 					<!--img src="./imgs/logo/recaptcha.gif"  class="img_payment" -->
 					<img src="./imgs/logo/facebook.png"  class="img_payment" >

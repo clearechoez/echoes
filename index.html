@@ -25,6 +25,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i" rel="stylesheet">
 	<script src="//kit.fontawesome.com/1f2096dc59.js" crossorigin="anonymous" defer></script><!--fontawesome limited 10k kit-key -->
 <style>
+@font-face {font-family: 'Mont';src: url('./fonts/Mont-Bold.ttf')) }
+@font-face {font-family: 'Poppins';src: url('./fonts/Poppins-Regular.ttf') }
 html:after {right: 0;}
 body:after {bottom: 0;}
 html:after, html:before {
@@ -50,12 +52,13 @@ body:after, body:before {
     z-index: 20000;
 }
 body{
-/*font-family: 'Open Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/font-feature-settings: "ss03", "cv02", "cv11";font-size:15px;-webkit-font-smoothing: auto;background-color:#f4f9fc;color:#0f1b61;}
+font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-h1,.title{font-weight: 800; }
+font-feature-settings: "ss03", "cv02", "cv11";font-size:15px;-webkit-font-smoothing: auto;background-color:#f4f9fc;color:#0f1b61;}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family: Mont,sans-serif; font-display: swap;line-height:1 !important;}
 *:focus {outline:0;}
 .clear{clear:both;}
-.nospace{padding:0;margin:0;}
+.relative{position:relative;}
 .rel-10{position:relative;top:-15px;background:rgba(238, 238, 238, 0.81);padding:10px;}
 .menu_float{background:rgba(58,58,58,.1);padding: 6px 13px;border-radius: 2px;position:fixed;top:17px;right:17px;color:#ddd;margin:5px;z-index: 1;}
 /*.header_placeholder{background:url('./imgs/zen.jpg'); background-size: 100%;color:#f5f5f5; }*/
@@ -75,7 +78,7 @@ h1,.title{font-weight: 800; }
 .profile{border-radius: 50%;width: 100px;}
 .nav_hypericon a{color:#fff;font-size: 20px;}
 .made-in-malaysia{position: fixed;font-size: 12px;transform-origin: bottom left;transform: rotate(-90deg);bottom: 84px;left: 55px;text-align: left; color: #919795;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
-
+.font_title{font-weight: 800;line-height: 0.9;}
 .img_links{height:20px;}
 .title_header{height:50px;}
 .hyper_job{font-size: 27px;color: #878787;}
@@ -147,6 +150,7 @@ ol, ul{font-smooth: auto;font-family: sans-serif;}
 		
 	</div>
 	<small class="made-in-malaysia">© ClearEchoes. Nurazhar Bin Rohaizat.</small>
+	<div class="p-5"></div>
 	<script defer>
 		change_page('overview.html');
 		function change_page(id){
